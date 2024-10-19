@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Charity Name</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>   
+    <header id="unique-navbar-header">
+        <nav id="unique-navbar" class="unique-navbar-container">
+          <div id="unique-logo-container" class="unique-logo">
+            <h1 id="unique-navbar-logo">Utkal Foundation</h1>
+          </div>
+          <!-- Navigation Links -->
+          <ul id="unique-nav-links" class="unique-nav-list">
+            <li><a href="/index.html" class="unique-nav-link">Home</a></li>
+            <li><a href="/src/pages/AboutPage/about.html" class="unique-nav-link">About</a></li>
+            <li><a href="/src/pages/OurWork/work.html" class="unique-nav-link">Our Work</a></li>
+            <li><a href="/src/pages/Gallery-Page/gallery.html" class="unique-nav-link">Gallery</a></li>
+            <li><a href="/src/pages/Members/members.html" class="unique-nav-link">Members</a></li>
+            <li><a href="/src/pages/contactPage/contact.html" class="unique-nav-link">Contact</a></li>
+            <li><a href="/src/pages/Members/members.html" id="unique-donate-button" class="unique-donate-btn">Donate</a></li>
+          </ul>
+          <!-- Hamburger Button for Mobile -->
+          <button id="unique-hamburger" class="unique-hamburger">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+        
+        <!-- Popup Menu (hidden by default) -->
+        <div id="unique-popup-menu" class="unique-popup-menu hidden">
+          <!-- Close Button for Popup -->
+          <button id="unique-close-popup" class="unique-close-popup">
+            <i class="fas fa-times"></i> <!-- Cross (Close) Icon -->
+          </button>
+          <ul id="unique-popup-links" class="unique-popup-nav-links">
+            <li><a href="/index.html" class="unique-popup-link">Home</a></li>
+            <li><a href="/src/pages/AboutPage/about.html" class="unique-popup-link">About</a></li>
+            <li><a href="/src/pages/OurWork/work.html" class="unique-popup-link">Our Work</a></li>
+            <li><a href="/src/pages/Gallery-Page/gallery.html" class="unique-popup-link">Gallery</a></li>
+            <li><a href="/src/pages/Members/members.html" class="unique-popup-link">Members</a></li>
+            <li><a href="/src/pages/contactPage/contact.html" class="unique-popup-link">Contact</a></li>
+            <li><a href="/src/pages/Members/members.html" id="unique-popup-donate-btn" class="unique-popup-donate-btn">Donate</a></li>
+          </ul>
+        </div>
+      </header>
+      
+    
+    <!-- Clickable area to close the popup menu -->
+    <div class="overlay hidden"></div>
+    <script>
+
+        // Toggle popup menu on hamburger click
+document.getElementById("unique-hamburger").addEventListener("click", function() {
+  document.getElementById("unique-popup-menu").classList.toggle("show");
+});
+
+// Close popup when close button is clicked
+document.getElementById("unique-close-popup").addEventListener("click", function() {
+  document.getElementById("unique-popup-menu").classList.remove("show");
+});
+
+    </script>
+
+  <!-- Hero Section 
+  <header class="hero">
+    // Hero Content with Left Heading and Right Oval 
+    <div class="hero-container">
+        //Left Side Heading 
+        <div class="hero-left">
+            <h1>Empowering Seniors, Enriching Lives</h1>
+            <p>Join us in providing care, dignity, and community support to seniors everywhere.</p>
+            <div class="cta-buttons">
+                <a href="#donate" class="hbtn primary">Donate Now</a>
+                <a href="#volunteer" class="hbtn secondary">Get Involved</a>
+            </div>
+        </div>
+      </div>
+    </div>
+</header>-->
+
+
+<!-- Slider Section -->
+<section class="slider-section">
+    <!-- Slider Container -->
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Slide Images will be injected via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Content Overlay -->
+    <div class="content-overlay">
+        <h1 id="sliderTitle">Innovating Your Digital World</h1>
+        <p id="sliderDescription">Providing cutting-edge technology solutions to drive your business forward.</p>
+        <div class="buttons-container">
+            
+        </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button id="prevSlide" class="carousel-control">&#10094;</button>
+    <button id="nextSlide" class="carousel-control">&#10095;</button>
+</section>
+
+
+
+  <!-- Section for Utkal Foundation -->
+  <section class="foundation-section">
+    <div class="content">
+        <h1>UTKAL FOUNDATION</h1>
+        <p class="subtitle"><b>(A Charitable Trust under Indian Trust Act- 1872)</b><br>
+            We work on Education, Healthcare, Livelihood, Water Sanitation, Food, Security, Emergency, Economic Development,
+            Climate Change, Agriculture and Disaster relief. We are working to keep unity and cooperation among the young mass of
+            the community and to build moral life and character among the youth. Undertake intensive and extensive measures to
+            organize people into Self Advocacy Groups (SAGs) at Village/Panchayat level, Federating them at block, district, state,
+            and national levels in order to accelerate development. Support financially & guide them on how to succeed in various
+            projects based on agriculture for SHG. We always work for the people in need.
+        </p>
+    </div>
+</section>
+
+<!-- Section for Logos/Certificates -->
+<section class="certification-section">
+    <div class="certifications">
+        <img src="/src/assets/images/niti.jpg" alt="Certification Logo 1">
+        <img src="/src/assets/images/msme.jpg" alt="Certification Logo 2">
+        <img src="/src/assets/images/ISO2.png" alt="Certification Logo 3">
+        <img src="/src/assets/images/ISO.png" alt="Certification Logo 4">
+        <img src="/src/assets/images/IAF.png" alt="Certification Logo 5">
+        <img src="/src/assets/images/arpan.png" alt="Certification Logo 6">
+    </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section id="mission-vision" class="section">
+    <h2>Our Mission & Vision</h2>
+    <div class="content">
+        <!-- Text Section -->
+        <div class="text-section">
+            <h3>Mission</h3>
+            <p>We are committed to uplifting lives by providing access to education, healthcare, and empowerment. 
+                We believe everyone deserves a fair chance to thrive, regardless of their circumstances. 
+                Our mission is to create lasting change by opening doors of opportunity for those in need. 
+                Together, we can build a brighter, more inclusive future.</p>
+
+            <h3>Vision</h3>
+            <p>We dream of a world where everyone has the chance to grow, learn, and lead a healthy, fulfilling life. 
+                A place where no one is left behind, and opportunities are available to all, regardless of where they c
+                ome from. We strive to create lasting change that uplifts communities and ensures everyone can live with 
+                dignity and hope. 
+                Together, we can build a future where everyone has a fair shot at success.</p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="/src/assets/images/11.jpg" alt="Mission and Vision">
+            <img src="/src/assets/images/12.jpg" alt="Mission and Vision">
+        </div>
+    </div>
+</section>
+
+     <!-- Our Work Section //#ff6700// -->
+<section id="our-work" class="section">
+    <h2>Our Work</h2>
+    <div class="work-container">
+        <div class="work-item">
+            <img src="/src/assets/images/5.webp" alt="Education Initiative">
+            <h3>Education for All</h3>
+            <p>We provide educational resources to children and adults in underserved communities, ensuring they have the tools to succeed in life.</p>
+        </div>
+        <div class="work-item">
+            <img src="/src/assets/images/8.webp" alt="Healthcare Initiative">
+            <h3>Healthcare Support</h3>
+            <p>Our healthcare camps offer free medical services to those who lack access to essential health facilities.</p>
+        </div>
+        <div class="work-item">
+            <img src="/src/assets/images/7.webp" alt="Environmental Initiative">
+            <h3>Environmental Sustainability</h3>
+            <p>Our tree plantation drives and environmental awareness campaigns are aimed at protecting our planet for future generations.</p>
+        </div>
+        <!-- New Work Items -->
+        <div class="work-item">
+            <img src="/src/assets/images/9.webp" alt="Community Development Initiative">
+            <h3>Providing Relief in Times of Disaster</h3>
+            <p>In times of disaster, we swiftly provide essential aid and support to help communities recover and rebuild their lives.</p>
+        </div>
+        <div class="work-item">
+            <img src="/src/assets/images/6.webp" alt="Women Empowerment Initiative">
+            <h3>Anti-Smoking Campaigns</h3>
+            <p>Our anti-smoking campaigns aim to raise awareness about the dangers of tobacco use and promote healthier, smoke-free lifestyles for individuals and communities.</p>
+        </div>
+        <div class="work-item">
+            <img src="/src/assets/images/10.jpg" alt="Clean Water Initiative">
+            <h3>Clean Water Access</h3>
+            <p>We work to provide clean drinking water to communities, improving health and well-being.</p>
+        </div>
+    </div>
+</section>
+
+<!--container-->
+    <div class="pricing-container">
+        <h1>Our Pricing Plans</h1>
+        
+        <div class="pricing-cards">
+          <div class="card basic">
+            <h2>Basic</h2>
+            <p class="price">$19<span>/month</span></p>
+            <ul>
+              <li>Feature One</li>
+              <li>Feature Two</li>
+              <li>Feature Three</li>
+            </ul>
+            <button class="btn"><a href="/src/pages/Members/members.html">Choose Plan</a></button>
+          </div>
+          
+          <div class="card professional">
+            <h2>Professional</h2>
+            <p class="price">$49<span>/month</span></p>
+            <ul>
+              <li>Feature One</li>
+              <li>Feature Two</li>
+              <li>Feature Three</li>
+              <li>Feature Four</li>
+            </ul>
+            <button class="btn"><a href="/src/pages/Members/members.html">Choose Plan</a></button>
+          </div>
+          
+          <div class="card team">
+            <h2>Team</h2>
+            <p class="price">$99<span>/month</span></p>
+            <ul>
+              <li>Feature One</li>
+              <li>Feature Two</li>
+              <li>Feature Three</li>
+              <li>Feature Four</li>
+              <li>Feature Five</li>
+            </ul>
+            <button class="btn"><a href="/src/pages/Members/members.html">Choose Plan</a></button>
+          </div>
+        </div>
+        
+        <!-- Animated Elements -->
+        <div class="waves"></div>
+        <div class="stars"></div>
+        <!-- Floating Bubbles -->
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+
+      
+<!--
+<div class="unique-responsive">
+    <div class="unique-slider-container">
+        <div class="unique-slider" id="uniqueSlider">
+            <!- 30 Images for Slider 
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-1.webp" alt="Image 1"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-2.webp" alt="Image 2"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-3.webp" alt="Image 3"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-4.webp" alt="Image 4"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-5.webp" alt="Image 5"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-7.webp" alt="Image 6"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-8.webp" alt="Image 7"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-9.webp" alt="Image 8"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-10.webp" alt="Image 9"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-11.webp" alt="Image 10"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-12.webp" alt="Image 11"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-13.webp" alt="Image 12"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-14.webp" alt="Image 13"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-15.webp" alt="Image 14"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-16.webp" alt="Image 15"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-17.webp" alt="Image 16"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-18.webp" alt="Image 17"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-19.webp" alt="Image 18"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-20.webp" alt="Image 19"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-21.webp" alt="Image 20"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-22.webp" alt="Image 21"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-23.webp" alt="Image 22"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-24.webp" alt="Image 23"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-25.webp" alt="Image 24"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-26.webp" alt="Image 25"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-27.webp" alt="Image 26"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-28.webp" alt="Image 27"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-29.webp" alt="Image 28"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-30.webp" alt="Image 29"></div>
+            <div class="unique-slide"><img src="./NGO_CATALOG-1,NGO_CATALOG-2,NGO_CATALOG-3/NGO_CATALOG-31.webp" alt="Image 30"></div>
+        </div>
+        <button class="unique-prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="unique-next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <!- PDF Download Button
+    <div class="unique-download-container">
+        <a href=".///NGO_CATALOG.pdf" download="UTKAL_FOUNDATION.pdf" class="unique-download-btn">Download</a>
+    </div>
+</div>-->
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="footer-section">
+            <h2 class="logo">Utkal Foundation</h2>
+            <p class="description">
+                At Utkal Foundation, we are dedicated to uplifting marginalized communities through impactful initiatives.
+            </p>
+            <p class="contact">
+                <i class="fas fa-envelope"></i> info@utkalfoudation.in <br>
+                <i class="fas fa-phone"></i> +91 797-823-0576
+            </p>
+        </div>
+        <div class="footer-section">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="/src/pages/AboutPage/about.html">About</a></li>
+                <li><a href="/src/pages/OurWork/work.html">Our Work</a></li>
+                <li><a href="/src/pages/Gallery-Page/gallery.html">Gallery</a></li>
+                <li><a href="/src/pages/Members/members.html">Members</a></li>
+                <li><a href="/src/pages/contactPage/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>CAMPAIGNS</h3>
+            <ul>
+                <li><a href="#">Child Cancer</a></li>
+                <li><a href="#">Differently Abled</a></li>
+                <li><a href="#">Clean Water</a></li>
+                <li><a href="#">Start Fundraising</a></li>
+                <li><a href="#">Give Education</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>"Empower lives with your support"</h3>
+            <p>Come Join Us Today!</p>
+            <a href="/src/pages/Members/members.html" class="donate-btn">Donate Now</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright 2023 by Utkal Foundation.com</p>
+        <p><a href="#">www.utkalfoundation.in</a></p>
+    </div>
+  <!-- Social Links -->
+  <div class="social-links">
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  
+  </footer>
+  <style>
+  .footer {
+    background-color: #000000;
+    padding: 30px 0;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 15px;
+    min-width: 250px;
+    
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.footer-section h2,
+.footer-section h3,
+.footer-section p {
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: grey;
+    line-height: 1.7;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #cbd5e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: smaller;
+}
+
+.footer-section ul li a:hover {
+    color: #0f2da4;
+}
+
+.footer-section .contact i {
+    margin-right: 10px;
+}
+
+.donate-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #011152;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #0f2da4;
+}
+
+/* Adding margin-top to push down Navigation, Campaigns, and We Work Together sections */
+.footer-section:nth-child(2), /* Navigation */
+.footer-section:nth-child(3), /* Campaigns */
+.footer-section:nth-child(4)  /* We Work Together for a Beautiful World */ {
+    margin-top: 30px; /* Adjust this value to control how much lower you want the sections */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0f1b24;
+}
+
+.footer-bottom p {
+    color: #94a3b8;
+}
+
+.footer-bottom a {
+    color: #0f2da4;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #0f2da4;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0f2da4;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 425px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Reset the margin on smaller screens for better layout */
+    .footer-section:nth-child(2),
+    .footer-section:nth-child(3),
+    .footer-section:nth-child(4) {
+        margin-top: 0;
+    }
+
+    .social-links a {
+        margin-right: 5px;
+    }
+}
+</style>
+
+
+<script src="script.js"></script>
+</body>
+</html>
