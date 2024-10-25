@@ -15,6 +15,7 @@
     <header id="unique-navbar-header">
         <nav id="unique-navbar" class="unique-navbar-container">
           <div id="unique-logo-container" class="unique-logo">
+            <img src="/src/assets/images/Logo_Utkal.png" alt="logoImg" class="logoImg">
             <h1 id="unique-navbar-logo">Utkal Foundation</h1>
           </div>
           <!-- Navigation Links -->
@@ -23,7 +24,7 @@
             <li><a href="/src/pages/AboutPage/about.html" class="unique-nav-link">About</a></li>
             <li><a href="/src/pages/OurWork/work.html" class="unique-nav-link">Our Work</a></li>
             <li><a href="/src/pages/Gallery-Page/gallery.html" class="unique-nav-link">Gallery</a></li>
-            <li><a href="/src/pages/Members/members.html" class="unique-nav-link">Members</a></li>
+            <li><a href="/src/pages/Members/members.html" class="unique-nav-link active">Members</a></li>
             <li><a href="/src/pages/contactPage/contact.html" class="unique-nav-link">Contact</a></li>
             <li><a href="/src/pages/Members/members.html" id="unique-donate-button" class="unique-donate-btn">Donate</a></li>
           </ul>
@@ -35,16 +36,19 @@
         
         <!-- Popup Menu (hidden by default) -->
         <div id="unique-popup-menu" class="unique-popup-menu hidden">
+            <div id="popup-header">
+                <h2>MENU</h2>
           <!-- Close Button for Popup -->
           <button id="unique-close-popup" class="unique-close-popup">
             <i class="fas fa-times"></i> <!-- Cross (Close) Icon -->
           </button>
+          </div>
           <ul id="unique-popup-links" class="unique-popup-nav-links">
             <li><a href="/index.html" class="unique-popup-link">Home</a></li>
             <li><a href="/src/pages/AboutPage/about.html" class="unique-popup-link">About</a></li>
             <li><a href="/src/pages/OurWork/work.html" class="unique-popup-link">Our Work</a></li>
             <li><a href="/src/pages/Gallery-Page/gallery.html" class="unique-popup-link">Gallery</a></li>
-            <li><a href="/src/pages/Members/members.html" class="unique-popup-link">Members</a></li>
+            <li><a href="/src/pages/Members/members.html" class="unique-popup-link active">Members</a></li>
             <li><a href="/src/pages/contactPage/contact.html" class="unique-popup-link">Contact</a></li>
             <li><a href="/src/pages/Members/members.html" id="unique-popup-donate-btn" class="unique-popup-donate-btn">Donate</a></li>
           </ul>
@@ -55,6 +59,22 @@
     <!-- Clickable area to close the popup menu -->
     <div class="overlay hidden"></div>
     <script>
+
+        
+                // Get the current page URL
+const currentUrl = window.location.pathname;
+
+// Get all the navigation links
+const navLinks = document.querySelectorAll('.unique-nav-link');
+
+// Loop through each link and compare href with current URL
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === currentUrl) {
+    link.classList.add('active');
+  }
+});
+
+
 
         // Toggle popup menu on hamburger click
 document.getElementById("unique-hamburger").addEventListener("click", function() {
@@ -81,43 +101,44 @@ document.getElementById("unique-close-popup").addEventListener("click", function
 
 <!--container-->
 <div class="pricing-container">
-    <h1>Our Pricing Plans</h1>
+    <h1>Choose Your Donation Plan</h1>
     
     <div class="pricing-cards">
       <div class="card basic">
-        <h2>Basic</h2>
-        <p class="price">$19<span>/month</span></p>
-        <ul>
-          <li>Feature One</li>
-          <li>Feature Two</li>
-          <li>Feature Three</li>
-        </ul>
-        <button class="btn"><a href="/src/pages/Services-Form/Form.html">Choose Plan</a></button>
+        <div class="icon-wrapper">
+            <img src="/src/assets/images/silver.png" alt="silver">
+        </div>
+        <h2 class="plan">Silver</h2>
+        <p class="price">&#8377;1500<span>/Year</span></p>
+        <p class="feature">
+            Every contribution makes a difference. By choosing the Silver Plan, you help us with essential support to sustain our operations and continue outreach programs.
+        </p>
+        <button class="btn"><a href="#multiStepForm">Choose Plan</a></button>
       </div>
       
       <div class="card professional">
-        <h2>Professional</h2>
-        <p class="price">$49<span>/month</span></p>
-        <ul>
-          <li>Feature One</li>
-          <li>Feature Two</li>
-          <li>Feature Three</li>
-          <li>Feature Four</li>
-        </ul>
-        <button class="btn"><a href="/src/pages/Services-Form/Form.html">Choose Plan</a></button>
+        <div class="icon-wrapper">
+            <img src="/src/pages/Members/MemberImg/gold.png" alt="gold">
+        </div>
+        <h2 class="plan">Gold</h2>
+        <p class="price">&#8377;2000<span>/Year</span></p>
+        <p class="feature">
+            Make an even greater impact with the Gold Plan. Your support empowers us to expand our reach and bring more substantial help to those who need it most.
+        </p>
+        <button class="btn"><a href="#multiStepForm">Choose Plan</a></button>
       </div>
       
       <div class="card team">
-        <h2>Team</h2>
-        <p class="price">$99<span>/month</span></p>
-        <ul>
-          <li>Feature One</li>
-          <li>Feature Two</li>
-          <li>Feature Three</li>
-          <li>Feature Four</li>
-          <li>Feature Five</li>
-        </ul>
-        <button class="btn"><a href="/src/pages/Services-Form/Form.html">Choose Plan</a></button>
+        <div class="icon-wrapper">
+            <img src="/src/pages/Members/MemberImg/platinum.png" alt="platinum">
+        </div>
+        <h2 class="plan">Platinum</h2>
+        <p class="price">&#8377;2500<span>/Year</span></p>
+        <p class="feature">
+            Join us as a leading supporter in the Platinum Plan. Your generous contribution allows us to launch new projects and drive sustainable change in the community.
+
+        </p>
+        <button class="btn"><a href="#multiStepForm">Choose Plan</a></button>
       </div>
     </div>
     
@@ -132,6 +153,13 @@ document.getElementById("unique-close-popup").addEventListener("click", function
     <div class="bubble"></div>
     <div class="bubble"></div>
   </div>
+  
+    <!-- About Us Section -->
+    <section class="works">
+        <h1>Choose Your Impact Level</h1>
+        <h2>Support, Sustain, and Transform Lives with Your Contribution</h2>
+        <p>Your support provides essential resources to those who need them most, from school supplies and food packages to health kits that offer immediate relief to families in need. Beyond meeting basic needs, your contribution funds skill-building workshops, medical camps, and clean water projects that equip communities with the tools and knowledge for sustainable growth. At the highest level, your generosity enables transformative projects like building schools, healthcare centers, and sustainable farming systems, creating lasting change and empowering communities for generations to come.</p>
+    </section>
 
     <div class="container">
         <h2>Multi-Step Form</h2>

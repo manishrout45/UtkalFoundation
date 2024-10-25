@@ -45,8 +45,8 @@
   <div class="social-links">
     <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
     <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com" target="_blank"><i class="fas fa-envelope"></i></a>
   </div>
   
   </footer>
@@ -175,7 +175,18 @@
     color: #0f2da4;
 }
 
+
 /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #footerend{
+        text-align: center;
+    }
+    #footerend ,h3, p{
+        align-content: center;
+    }
+
+
+}
 @media (max-width: 425px) {
     .footerContainer {
         flex-direction: column;
@@ -187,6 +198,7 @@
         text-align: center;
         margin-bottom: 20px;
     }
+    
 
     /* Reset the margin on smaller screens for better layout */
     .footer-section:nth-child(2),
