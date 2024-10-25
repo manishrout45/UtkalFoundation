@@ -157,7 +157,7 @@ body {
     font-size: 1.3rem;
     font-weight: 500;
     text-decoration: none;
-    padding: 11px 0;
+    padding: 10px 0;
     width: 100%;
     display: block;
     border-bottom: 1px solid #f0f0f5; /* Subtle border between links */
@@ -180,14 +180,39 @@ body {
   .unique-popup-donate-btn {
     background-color: #011152;
     color: white;
-    padding: 15px 30px;
+    padding: 10px 20px; /* Reduced padding for smaller screens */
     border-radius: 5px;
-    margin-top: 40px; /* Extra space above button */
     text-decoration: none;
     font-size: 1.3rem;
     text-align: center;
     width: 100%; /* Full width button */
+    display: inline-block;
   }
+  
+  /* Large screens (laptops/desktops) */
+  @media (min-width: 1024px) {
+    .unique-popup-donate-btn {
+      padding: 10px 50px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .unique-popup-donate-btn {
+      padding: 10px 40px;
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Small screens (phones) */
+  @media (max-width: 767px) {
+    .unique-popup-donate-btn {
+      padding: 10px 30px;
+      font-size: 1.2rem;
+    }
+  }
+  
   
   .unique-popup-donate-btn:hover {
     background-color: #0056b3; /* Darker blue on hover */
@@ -355,8 +380,9 @@ body {
 
 @media (max-width: 425px) {
     .hero h1 {
-        font-size: 22px;
+        font-size: 36px;
         padding: 0 10px;
+    
     }
 }
 

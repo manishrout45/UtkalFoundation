@@ -158,8 +158,7 @@ body {
   font-size: 1.3rem;
   font-weight: 500;
   text-decoration: none;
-  padding: 15px 0;
-
+  padding: 10px 0;
   width: 100%;
   display: block;
   border-bottom: 1px solid #f0f0f5; /* Subtle border between links */
@@ -182,13 +181,13 @@ body {
 .unique-popup-donate-btn {
   background-color: #011152;
   color: white;
-  padding: 15px 30px;
+  padding: 10px 66.6px;
   border-radius: 5px;
-  margin-top: 40px; /* Extra space above button */
   text-decoration: none;
   font-size: 1.3rem;
   text-align: center;
   width: 100%; /* Full width button */
+
 }
 
 .unique-popup-donate-btn:hover {
@@ -470,7 +469,7 @@ body {
 
 @media (max-width: 425px) {
   .hero h1 {
-      font-size: 22px;
+      font-size: 36px;
       padding: 0 10px;
   }
 }
@@ -486,6 +485,7 @@ body {
 .popular-causes {
   text-align: center;
   padding: 50px 20px;
+  margin-top: -40px;
 }
 
 .popular-causes h1 {
