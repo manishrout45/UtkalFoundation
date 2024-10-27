@@ -120,8 +120,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: -20px;
-  margin-left: 4px;
   margin-bottom: 10px;
 }
 
@@ -148,7 +146,7 @@ body {
 .unique-popup-nav-links {
   list-style: none;
   padding-top: 5px;
-  margin-top: -10px; /* Space below the close button */
+  margin-top: -20px; /* Space below the close button */
   width: 100%;
   margin-left: -40px;
 }
@@ -174,20 +172,45 @@ body {
 .unique-popup-link.active {
   background-color: #011152; /* Highlight active menu item */
   color: white; /* White text for contrast */
-  padding-left: 10px;
+  padding-left: 10px ;
   border-radius: 4px; /* Rounded for better design */
+width: auto;
 }
 
 .unique-popup-donate-btn {
   background-color: #011152;
   color: white;
-  padding: 10px 66.6px;
+  padding: 10px 20px; /* Reduced padding for smaller screens */
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.3rem;
-  text-align: center;
+  text-align:center;
   width: 100%; /* Full width button */
+  display: inline-block;
+}
 
+/* Large screens (laptops/desktops) */
+@media (min-width: 1024px) {
+  .unique-popup-donate-btn {
+    padding: 10px 0;
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .unique-popup-donate-btn {
+    padding: 10px 0;
+    font-size: 1.4rem;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .unique-popup-donate-btn {
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
 }
 
 .unique-popup-donate-btn:hover {
@@ -215,6 +238,7 @@ body {
     padding: 12px 20px;
   }
 }
+
 
 /* Hover Effect for Desktop Menu */
 .unique-nav-link:hover {

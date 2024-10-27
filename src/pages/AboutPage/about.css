@@ -406,7 +406,7 @@ body, html {
 }
 
 .company-title {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: 700;
     color: #011152;
     margin-bottom: 1.5rem;
@@ -415,9 +415,9 @@ body, html {
 
 .company-paragraph {
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .highlight {
@@ -498,7 +498,7 @@ body, html {
 
 /* About Our Company Section */
 .about-company {
-    padding: 20px 0;
+    padding: 40px 0; /* Increased padding for better spacing */
     background-color: #f9f9f9;
 }
 
@@ -513,69 +513,104 @@ body, html {
 
 .about-image img {
     width: 100%;
-    max-width: 600px; /* Set maximum image width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 550px; /* Reduced max width for more compact layout */
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for a polished look */
 }
 
 .about-text {
-    max-width: 600px; /* Set max width for text section */
+    max-width: 600px;
     margin-left: 40px;
-    
 }
 
 .about-text h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #011152;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-text p {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.6;
+    color: #424242;
 }
 
-/* Responsive Design */
+/* Tablet and Laptop Screens */
 @media (max-width: 1024px) {
+    .about-container {
+        padding: 0 20px;
+    }
+
     .about-text {
         margin-left: 20px;
         max-width: 500px;
     }
 
     .about-image img {
-        max-width: 600px; /* Reduce image size */
+        max-width: 500px;
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 17px;
     }
 }
 
+/* Small Tablets and Large Mobile Screens */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
         text-align: center;
+        padding: 0 15px;
     }
 
     .about-image img {
-        max-width: 100%; /* Allow image to fit smaller screens */
+        max-width: 90%; /* Scales to fit content area */
+        margin-bottom: 20px; /* Space below image */
     }
 
     .about-text {
         margin-left: 0;
-        max-width: 100%; /* Ensure text fits within container */
+        max-width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
     }
 }
 
+/* Mobile Screens */
 @media (max-width: 425px) {
+    .about-company {
+        padding: 30px 0;
+    }
+
     .about-text h2 {
         font-size: 24px;
     }
 
     .about-text p {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
 
+    .about-image img {
+        border-radius: 8px;
     }
 }
 
+/* Extra Small Mobile Screens */
 @media (max-width: 320px) {
     .about-text h2 {
         font-size: 20px;
@@ -583,14 +618,18 @@ body, html {
 
     .about-text p {
         font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .about-container {
+        padding: 0 10px;
     }
 }
 
 /* Meet Our Founder Section */
 .about-founder {
-    padding: 20px 0;
+    padding: 40px 0; /* Increased padding for better section separation */
     background-color: #f0f7ff;
-    
 }
 
 .about-founder-container {
@@ -604,60 +643,76 @@ body, html {
 
 .about-founder-image img {
     width: 100%;
-    max-width: 600px; /* Set maximum image width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 550px; /* Set max width for image on large screens */
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
 }
 
 .about-founder-text {
     max-width: 600px; /* Set max width for text section */
-    margin-right: 40px;
+    margin-left: 40px; /* Margin to create spacing between text and image */
 }
 
 .about-founder-text h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #011152;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-founder-text p {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.6;
+    color: #424242;
 }
 
-/* Responsive Design */
+/* Tablet and Laptop Screens */
 @media (max-width: 1024px) {
+    .about-founder-container {
+        padding: 0 20px;
+    }
+
     .about-founder-text {
-        margin-right: 20px;
+        margin-left: 20px;
         max-width: 500px;
     }
 
     .about-founder-image img {
-        max-width: 600px; /* Reduce image size */
+        max-width: 500px; /* Smaller max width for tablet screens */
+    }
+
+    .about-founder-text h2 {
+        font-size: 32px;
+    }
+
+    .about-founder-text p {
+        font-size: 17px;
     }
 }
 
+/* Small Tablets and Large Mobile Screens */
 @media (max-width: 768px) {
     .about-founder-container {
         flex-direction: column;
         text-align: center;
+        padding: 0 15px;
     }
 
     .about-founder-image img {
-        max-width: 100%; /* Allow image to fit smaller screens */
+        max-width: 90%; /* Allow image to fit content area */
+        margin-bottom: 20px; /* Add spacing below image */
     }
 
     .about-founder-text {
-        margin-right: 0;
-        max-width: 100%; /* Ensure text fits within container */
+        margin-left: 0;
+        max-width: 100%;
     }
-}
 
-@media (max-width: 425px) {
     .about-founder-text h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .about-founder-text p {
@@ -665,6 +720,27 @@ body, html {
     }
 }
 
+/* Mobile Screens */
+@media (max-width: 425px) {
+    .about-founder {
+        padding: 30px 0;
+    }
+
+    .about-founder-text h2 {
+        font-size: 24px;
+    }
+
+    .about-founder-text p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .about-founder-image img {
+        border-radius: 8px;
+    }
+}
+
+/* Extra Small Mobile Screens */
 @media (max-width: 320px) {
     .about-founder-text h2 {
         font-size: 20px;
@@ -672,9 +748,13 @@ body, html {
 
     .about-founder-text p {
         font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .about-founder-container {
+        padding: 0 10px;
     }
 }
-
 
 /* Our Mission Section */
 .our-mission {

@@ -19,7 +19,7 @@
           <ul id="unique-nav-links" class="unique-nav-list">
             <li><a href="/index.html" class="unique-nav-link active">Home</a></li>
             <li><a href="/src/pages/AboutPage/about.html" class="unique-nav-link">About</a></li>
-            <li><a href="/src/pages/OurWork/work.html" class="unique-nav-link">Our Work</a></li>
+            <li><a href="/src/pages/OurWork/work.html" class="unique-nav-link">Work</a></li>
             <li><a href="/src/pages/Gallery-Page/gallery.html" class="unique-nav-link">Gallery</a></li>
             <li><a href="/src/pages/Members/members.html" class="unique-nav-link">Members</a></li>
             <li><a href="/src/pages/contactPage/contact.html" class="unique-nav-link">Contact</a></li>
@@ -44,7 +44,7 @@
           <ul id="unique-popup-links" class="unique-popup-nav-links">
             <li><a href="/index.html" class="unique-popup-link active">Home</a></li>
             <li><a href="/src/pages/AboutPage/about.html" class="unique-popup-link">About</a></li>
-            <li><a href="/src/pages/OurWork/work.html" class="unique-popup-link">Our Work</a></li>
+            <li><a href="/src/pages/OurWork/work.html" class="unique-popup-link">Work</a></li>
             <li><a href="/src/pages/Gallery-Page/gallery.html" class="unique-popup-link">Gallery</a></li>
             <li><a href="/src/pages/Members/members.html" class="unique-popup-link">Members</a></li>
             <li><a href="/src/pages/contactPage/contact.html" class="unique-popup-link">Contact</a></li>
@@ -336,7 +336,8 @@ document.getElementById("unique-close-popup").addEventListener("click", function
             </p>
             <p class="contact">
                 <i class="fas fa-envelope"></i> info@utkalfoudation.in <br>
-                <i class="fas fa-phone"></i> +91 797-823-0576
+                <i class="fas fa-phone"></i> +91 797-823-0576<br>
+                <i class="fas fa-phone"></i> +91 898-480-5015
             </p>
         </div>
         <div class="footer-section">
@@ -362,7 +363,7 @@ document.getElementById("unique-close-popup").addEventListener("click", function
         <div class="footer-section" id="footerend">
             <h3>"Empower lives with your support"</h3>
             <p>Come Join Us Today!</p>
-            <a href="/src/pages/Members/members.html" class="donate-btn">Donate Now</a>
+            <a href="/src/pages/InstaMojo.html" class="donate-btn">Donate Now</a>
         </div>
     </div>
     <div class="footer-bottom">
@@ -371,10 +372,10 @@ document.getElementById("unique-close-popup").addEventListener("click", function
     </div>
   <!-- Social Links -->
   <div class="social-links">
-    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.linkedin.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100075681608157&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://x.com/UtkalFoundatio2?t=mjoRDYPl-ImKn_nk2wY26Q&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://wa.me/098531 72579" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/utkaltrust/?igsh=ZjU4ZGZkeDJvM3Rj" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
   
   </footer>
@@ -415,6 +416,20 @@ document.getElementById("unique-close-popup").addEventListener("click", function
     margin-bottom: 10px;
     text-align: left;
 }
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .footer-section h3{
+        text-align: center; /* Center-align list items on mobile screens */
+       
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h3 {
+        text-align: center; /* Center-align for very small screens */
+       
+    }
+}
 
 .footer-section p,
 .footer-section ul {
@@ -432,6 +447,13 @@ document.getElementById("unique-close-popup").addEventListener("click", function
     margin-bottom: 10px;
 }
 
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .footer-section ul li,.footer-section p {
+        text-align: center; /* Center-align list items on mobile screens */
+        margin-bottom: 8px; /* Adjust margin for tighter spacing on smaller screens */
+    }
+}
 .footer-section ul li a {
     color: #cbd5e0;
     text-decoration: none;
@@ -526,6 +548,72 @@ document.getElementById("unique-close-popup").addEventListener("click", function
         margin-bottom: 20px;
     }
     
+    /* Default styles (for large desktop screens) */
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.footer-section {
+    margin: 0 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Tablet styles (for screens up to 1024px) */
+@media (max-width: 1024px) {
+    .footerContainer {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Mobile styles (for screens up to 768px) */
+@media (max-width: 768px) {
+    .footerContainer {
+        padding: 15px;
+    }
+
+    .footer-section {
+        font-size: 14px;
+    }
+}
+
+/* Smaller mobile screens (for screens up to 425px) */
+@media (max-width: 425px) {
+    .footerContainer {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+}
+
+/* Extra small screens (for screens up to 320px) */
+@media (max-width: 320px) {
+    .footerContainer {
+        padding: 8px;
+    }
+
+    .footer-section {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+
 
     /* Reset the margin on smaller screens for better layout */
     .footer-section:nth-child(2),
@@ -538,6 +626,8 @@ document.getElementById("unique-close-popup").addEventListener("click", function
         margin-right: 5px;
     }
 }
+
+
 </style>
 
 

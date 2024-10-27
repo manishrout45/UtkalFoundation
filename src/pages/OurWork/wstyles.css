@@ -175,6 +175,7 @@ body {
     color: white; /* White text for contrast */
     padding-left: 10px;
     border-radius: 4px; /* Rounded for better design */
+    padding: 5px;
   }
   
   .unique-popup-donate-btn {
@@ -200,7 +201,7 @@ body {
   /* Medium screens (tablets) */
   @media (min-width: 768px) and (max-width: 1023px) {
     .unique-popup-donate-btn {
-      padding: 10px 40px;
+      padding: 5px;
       font-size: 1.4rem;
     }
   }
@@ -208,8 +209,8 @@ body {
   /* Small screens (phones) */
   @media (max-width: 767px) {
     .unique-popup-donate-btn {
-      padding: 10px 30px;
       font-size: 1.2rem;
+      padding: 5px;
     }
   }
   
