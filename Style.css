@@ -736,7 +736,7 @@ body {
   flex: 1;
   max-width: 500px;
   margin: 20px;
-  padding: 30px;
+  padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -744,7 +744,7 @@ body {
 }
 
 .mission-text-section h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: #011152;
   margin-bottom: 20px;
   position: relative;
@@ -860,6 +860,39 @@ body {
       padding-bottom: 20px; /* Optional: Add bottom padding */
       text-align: center; /* Center the text */
   }
+}
+/* Responsive Font Sizes */
+.mission-text-section h3 {
+  font-size: 1.5rem; /* Adjusted for desktop */
+}
+
+.mission-text-section p {
+  font-size: 1rem; /* Adjusted for desktop */
+}
+
+@media (max-width: 768px) {
+  .mission-text-section h3 {
+    font-size: 1.2rem; /* Smaller font for mobile */
+  }
+
+  .mission-text-section p {
+    font-size: 0.9rem; /* Smaller font for mobile */
+  }
+
+  /* Adjust padding and height */
+  .mission-text-section {
+    padding: 15px; /* Reduce padding */
+    margin: 10px 0; /* Maintain smaller margin */
+  }
+
+  .mission-content {
+    padding: 10px; /* Smaller padding for mobile */
+  }
+}
+
+/* Adjust Image Size for Mobile */
+.mission-image-section img {
+  height: auto; /* Auto height for responsive sizing */
 }
 
 
