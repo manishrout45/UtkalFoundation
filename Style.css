@@ -701,7 +701,7 @@ body {
   }
 }
 
-   /* Section Styling */
+/* Section Styling */
 #mission-vision {
   background: linear-gradient(135deg, #d4fc79, #96e6a1);
   max-width: 1280px;
@@ -744,7 +744,7 @@ body {
 }
 
 .mission-text-section h3 {
-  font-size: 18px;
+  font-size: 1.5rem; /* Adjusted for desktop */
   color: #011152;
   margin-bottom: 20px;
   position: relative;
@@ -752,7 +752,7 @@ body {
 }
 
 .mission-text-section p {
-  font-size: 14px;
+  font-size: 1rem; /* Adjusted for desktop */
   color: #424242;
   line-height: 1.7;
 }
@@ -767,8 +767,6 @@ body {
   max-width: 600px;
   margin: 10px;
   position: relative;
- 
-  
 }
 
 .mission-image-section img {
@@ -793,7 +791,7 @@ body {
   left: -30%;
   width: 160%;
   height: 160%;
-  background: linear-gradient(135deg,  #4949ff, #011152);
+  background: linear-gradient(135deg, #4949ff, #011152);
   z-index: 0;
   animation: rotateGradient 10s infinite linear;
 }
@@ -805,37 +803,39 @@ body {
     left: -10%;
     width: 120%;
     height: 120%;
-    background: linear-gradient(135deg,  #4949ff, #011152);
+    background: linear-gradient(135deg, #4949ff, #011152);
     z-index: 0;
     animation: rotateGradient 10s infinite linear;
-    }
   }
+}
+
 @media (max-width: 1024px) {
-#mission-vision::before {
-  content: "";
-  position: absolute;
-  top: -20%;
-  left: -20%;
-  width: 140%;
-  height: 140%;
-  background: linear-gradient(135deg,  #4949ff, #011152);
-  z-index: 0;
-  animation: rotateGradient 10s infinite linear;
+  #mission-vision::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: linear-gradient(135deg, #4949ff, #011152);
+    z-index: 0;
+    animation: rotateGradient 10s infinite linear;
   }
 }
 
 /* Gradient Animation */
 @keyframes rotateGradient {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 /* Ensure content is above background animation */
-.mission-content, h2 {
+.mission-content,
+h2 {
   position: relative;
   z-index: 1;
 }
@@ -843,34 +843,24 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .mission-content {
-      flex-direction: column;
-      align-items: center; /* Center content on mobile */
-      padding-left: 1rem;  /* Add left padding */
-      padding-right: 1rem; /* Add right padding */
+    flex-direction: column;
+    align-items: center; /* Center content on mobile */
+    padding-left: 1rem; /* Add left padding */
+    padding-right: 1rem; /* Add right padding */
   }
 
   .mission-text-section,
   .mission-image-section {
-      max-width: 100%; /* Make full width */
-      margin: 10px 0; /* Add margin between sections */
+    max-width: 100%; /* Make full width */
+    margin: 10px 0; /* Add margin between sections */
   }
 
   .mission-text-section {
-      padding-top: 20px;  /* Optional: Add top padding */
-      padding-bottom: 20px; /* Optional: Add bottom padding */
-      text-align: center; /* Center the text */
+    padding: 15px; /* Reduce padding for mobile */
+    text-align: center; /* Center the text */
   }
-}
-/* Responsive Font Sizes */
-.mission-text-section h3 {
-  font-size: 1.5rem; /* Adjusted for desktop */
-}
 
-.mission-text-section p {
-  font-size: 1rem; /* Adjusted for desktop */
-}
-
-@media (max-width: 768px) {
+  /* Responsive Font Sizes */
   .mission-text-section h3 {
     font-size: 1.2rem; /* Smaller font for mobile */
   }
@@ -879,20 +869,10 @@ body {
     font-size: 0.9rem; /* Smaller font for mobile */
   }
 
-  /* Adjust padding and height */
-  .mission-text-section {
-    padding: 15px; /* Reduce padding */
-    margin: 10px 0; /* Maintain smaller margin */
+  /* Adjust Image Size for Mobile */
+  .mission-image-section img {
+    height: auto; /* Auto height for responsive sizing */
   }
-
-  .mission-content {
-    padding: 10px; /* Smaller padding for mobile */
-  }
-}
-
-/* Adjust Image Size for Mobile */
-.mission-image-section img {
-  height: auto; /* Auto height for responsive sizing */
 }
 
 
