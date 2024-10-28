@@ -726,15 +726,14 @@ body {
 
 .mission-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between; /* Better distribution */
+  align-items: flex-start; /* Align items to the top */
   flex-wrap: wrap;
 }
 
 /* Text Section Styling */
 .mission-text-section {
-  flex: 1;
-  max-width: 500px;
+  flex: 1 1 300px; /* Allow elements to grow and shrink */
   margin: 20px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -763,7 +762,7 @@ body {
 }
 
 .mission-image-section {
-  flex: 1;
+  flex: 1 1 300px; /* Allow image section to grow and shrink */
   max-width: 600px;
   margin: 10px;
   position: relative;
@@ -771,9 +770,8 @@ body {
 
 .mission-image-section img {
   width: 100%;
-  height: 480px;
+  height: auto; /* Maintain aspect ratio */
   border-radius: 8px;
-  margin-left: -10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -796,40 +794,13 @@ body {
   animation: rotateGradient 10s infinite linear;
 }
 
-@media (max-width: 768px) {
-  #mission-vision::before {
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 120%;
-    height: 120%;
-    background: linear-gradient(135deg, #4949ff, #011152);
-    z-index: 0;
-    animation: rotateGradient 10s infinite linear;
-  }
-}
-
-@media (max-width: 1024px) {
-  #mission-vision::before {
-    content: "";
-    position: absolute;
-    top: -20%;
-    left: -20%;
-    width: 140%;
-    height: 140%;
-    background: linear-gradient(135deg, #4949ff, #011152);
-    z-index: 0;
-    animation: rotateGradient 10s infinite linear;
-  }
-}
-
 /* Gradient Animation */
 @keyframes rotateGradient {
   0% {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
 
@@ -843,37 +814,31 @@ h2 {
 /* Responsive Design */
 @media (max-width: 768px) {
   .mission-content {
-    flex-direction: column;
-    align-items: center; /* Center content on mobile */
-    padding-left: 1rem; /* Add left padding */
-    padding-right: 1rem; /* Add right padding */
+      flex-direction: column; /* Stack elements on small screens */
+      align-items: center;
   }
 
   .mission-text-section,
   .mission-image-section {
-    max-width: 100%; /* Make full width */
-    margin: 10px 0; /* Add margin between sections */
+      width: 100%; /* Full width for smaller screens */
+      margin: 10px 0; /* Add margin between sections */
   }
 
   .mission-text-section {
-    padding: 15px; /* Reduce padding for mobile */
-    text-align: center; /* Center the text */
+      padding: 15px; /* Reduce padding for mobile */
+      text-align: center; /* Center the text */
   }
 
   /* Responsive Font Sizes */
   .mission-text-section h3 {
-    font-size: 1.2rem; /* Smaller font for mobile */
+      font-size: 1.2rem; /* Smaller font for mobile */
   }
 
   .mission-text-section p {
-    font-size: 0.9rem; /* Smaller font for mobile */
-  }
-
-  /* Adjust Image Size for Mobile */
-  .mission-image-section img {
-    height: auto; /* Auto height for responsive sizing */
+      font-size: 0.9rem; /* Smaller font for mobile */
   }
 }
+
 
 
 
