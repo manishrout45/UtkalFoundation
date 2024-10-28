@@ -744,7 +744,7 @@ body {
 }
 
 .mission-text-section h3 {
-  font-size: 1.8rem;
+  font-size: 20px;
   color: #011152;
   margin-bottom: 20px;
   position: relative;
@@ -752,7 +752,7 @@ body {
 }
 
 .mission-text-section p {
-  font-size: 1rem;
+  font-size: 14px;
   color: #424242;
   line-height: 1.7;
 }
