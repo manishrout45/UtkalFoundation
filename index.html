@@ -73,6 +73,9 @@ navLinks.forEach(link => {
 });
 
 
+
+
+
         // Toggle popup menu on hamburger click
 document.getElementById("unique-hamburger").addEventListener("click", function() {
   document.getElementById("unique-popup-menu").classList.toggle("show");
@@ -129,19 +132,23 @@ document.getElementById("unique-close-popup").addEventListener("click", function
 
 
   <!-- Section for Utkal Foundation -->
-  <section class="foundation-section">
-    <div class="content">
-        <h1>UTKAL FOUNDATION</h1>
-        <p class="subtitle"><b>(A Charitable Trust under Indian Trust Act- 1872)</b><br>
+<section class="foundation-section">
+    <div class="content-1">
+        <h1 class="foundation-title">UTKAL FOUNDATION</h1>
+        <p class="foundation-subtitle">
+            <b>(A Charitable Trust under Indian Trust Act- 1872)</b>
+        </p>
+        <p class="foundation-description">
             We work on Education, Healthcare, Livelihood, Water Sanitation, Food, Security, Emergency, Economic Development,
-            Climate Change, Agriculture and Disaster relief. We are working to keep unity and cooperation among the young mass of
+            Climate Change, Agriculture, and Disaster relief. We are working to keep unity and cooperation among the young mass of
             the community and to build moral life and character among the youth. Undertake intensive and extensive measures to
-            organize people into Self Advocacy Groups (SAGs) at Village/Panchayat level, Federating them at block, district, state,
-            and national levels in order to accelerate development. Support financially & guide them on how to succeed in various
-            projects based on agriculture for SHG. We always work for the people in need.
+            organize people into Self Advocacy Groups (SAGs) at Village/Panchayat level, federating them at block, district, state,
+            and national levels to accelerate development. Support financially & guide them on how to succeed in various
+            projects based on agriculture for SHG. We always work for people in need.
         </p>
     </div>
 </section>
+
 
 <!-- Section for Logos/Certificates -->
 <section class="certification-section">
@@ -158,9 +165,9 @@ document.getElementById("unique-close-popup").addEventListener("click", function
 <!-- Mission & Vision Section -->
 <section id="mission-vision" class="section">
     <h2>Our Mission & Vision</h2>
-    <div class="content">
+    <div class="mission-content">
         <!-- Text Section -->
-        <div class="text-section">
+        <div class="mission-text-section">
             <h3>Mission</h3>
             <p>We are committed to uplifting lives by providing access to education, healthcare, and empowerment. 
                 We believe everyone deserves a fair chance to thrive, regardless of their circumstances. 
@@ -176,9 +183,9 @@ document.getElementById("unique-close-popup").addEventListener("click", function
         </div>
 
         <!-- Image Section -->
-        <div class="image-section">
+        <div class="mission-image-section">
             <img src="/src/assets/images/11.jpg" alt="Mission and Vision">
-            <img src="/src/assets/images/12.jpg" alt="Mission and Vision">
+           <!-- <img src="/src/assets/images/12.jpg" alt="Mission and Vision">-->
         </div>
     </div>
 </section>
@@ -385,8 +392,8 @@ document.getElementById("unique-close-popup").addEventListener("click", function
 .footerContainer {
     display: flex;
     justify-content: space-between;
-    max-width: 2560px;
-    margin: 30px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
     flex-wrap: wrap;
     padding: 20px 0;
 }
