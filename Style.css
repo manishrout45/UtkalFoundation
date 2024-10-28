@@ -31,7 +31,7 @@ body {
 }
 
 #unique-navbar {
-  max-width: 1280px;
+  max-width: 2560px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -377,6 +377,13 @@ body {
   object-fit: cover; /* Ensure the image covers the entire container */
   object-position: center; /* Center the image within the container */
 }
+/* Large Desktop Screens (1440px - 2560px) */
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .slider-container {
+      height: 80vh; /* Slightly adjust height for large screens */
+  }
+}
+
 
 /* Content Overlay */
 .content-overlay {
@@ -386,27 +393,110 @@ body {
   right: 0;
   bottom: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent, rgba(0, 0, 0, 0.7));
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  padding: 0 70px;
+  padding: 0 40px; /* Base padding */
+  max-width: 100%;
 }
+/* Large Desktop Screens (1440px - 2560px) */
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .content-overlay {
+      padding: 0 100px;
+  }
+}
+
+/* Standard Desktop Screens (1024px - 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .content-overlay {
+      padding: 0 70px;
+  }
+}
+
+/* Tablet Screens (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-overlay {
+      padding: 0 50px;
+  }
+}
+
+/* Mobile Screens (up to 768px) */
+@media (max-width: 768px) {
+  .content-overlay {
+      padding: 0 20px;
+  }
+}
+
 
 .content-overlay h1 {
   font-size: 2.4rem;
   font-weight: bold;
   color: white;
   animation: fadeIn 1.5s ease-in-out;
+  max-width: 90%px;
+  text-align: center;
+}
+.content-overlay p {
+  font-size: 1rem;
+  margin-top: 0;
+  animation: fadeIn 1.5s ease-in-out;
+  max-width: 90%;
+  color: white;
+  text-align: center;
 }
 
-.content-overlay p {
-  font-size: 1.2rem;
-  margin-top: 0px;
-  animation: fadeIn 1.5s ease-in-out;
+/*add responsive*/
+/* Large Desktop Screens (1440px - 2560px) */
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .content-overlay h1 {
+      font-size: 3rem;
+      max-width: 80%;
+  }
+  .content-overlay p {
+      font-size: 1.5rem;
+      max-width: 80%;
+  }
 }
+
+/* Standard Desktop Screens (1024px - 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .content-overlay h1 {
+      font-size: 2.4rem;
+      max-width: 85%;
+  }
+  .content-overlay p {
+      font-size: 1.2rem;
+      max-width: 85%;
+  }
+}
+
+/* Tablet Screens (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-overlay h1 {
+      font-size: 2rem;
+      max-width: 90%;
+  }
+  .content-overlay p {
+      font-size: 1rem;
+      max-width: 90%;
+  }
+}
+
+/* Mobile Screens (up to 768px) */
+@media (max-width: 768px) {
+  .content-overlay h1 {
+      font-size: 1.8rem;
+      max-width: 95%;
+  }
+  .content-overlay p {
+      font-size: 0.9rem;
+      max-width: 95%;
+  }
+}
+
 
 .buttons-container {
   margin-top: 10px;
@@ -667,7 +757,7 @@ body {
 .description {
     font-size: 16px;
     line-height: 1.6;
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto 30px;
     color: #161616;
 }
@@ -675,9 +765,7 @@ body {
     /* Section Styling */
     #mission-vision {
       background: linear-gradient(135deg, #d4fc79, #96e6a1);
-      max-width: 1280px;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      max-width: 2560px;
       margin: 0 auto;
       padding: 80px 0;
       text-align: center;
@@ -799,7 +887,7 @@ body {
 
 .text-section {
   flex: 1;
-  max-width: 500px;
+  max-width: 2560px;
   margin: 20px;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -856,7 +944,6 @@ body {
   width: 160%;
   height: 160%;
   background: linear-gradient(135deg, #4949ff, #011152);
-  z-index: 0;
   animation: rotateGradient 10s infinite linear;
 }
 
@@ -913,7 +1000,7 @@ body {
 
 /* Base Styles (for larger screens) */
 .certification-section {
-  max-width: 1280px;
+  max-width: 2560px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -990,6 +1077,27 @@ body {
     width: 80px;
   }
 }
+/* for mobile desktopmode*/
+/* Mobile View */
+@media (max-width: 768px) {
+    .foundation-section {
+        padding: 20px;
+    }
+    
+    .foundation-section .content {
+        padding: 15px;
+    }
+
+    .foundation-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .foundation-section .subtitle {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
 
 
 /* General Section Styling */
@@ -1014,7 +1122,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    max-width: 1200px;
+    max-width: 2560px;
     margin: 0 auto;
     flex-wrap: wrap; /* Makes it responsive */
 }
@@ -1078,7 +1186,7 @@ body {
   flex-wrap: wrap; /* Allow wrapping to the next row */
   justify-content: space-between; /* Space items evenly */
   gap: 15px; /* Adjusted space between items */
-  max-width: 1280px;
+  max-width: 2560px;
   margin: 0 auto;
   
 }
@@ -1094,6 +1202,8 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
+  max-width: 2560px;
+  margin: 1px 0;
 }
 
 /* Ensure the image fits well within the fixed container */
@@ -1174,7 +1284,7 @@ h1 {
 .pricing-cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 35px;
   flex-wrap: wrap;
   padding: 20px;
   z-index: 2;
@@ -1559,7 +1669,7 @@ a{
 /*Catalog slider*/
 
 .unique-responsive{
-  max-width: 1280px;
+  max-width: 2560px;
   background-color: #78a0cb;
   padding-top: 40px;
   padding-bottom: 20px;
