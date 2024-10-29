@@ -411,13 +411,12 @@ body {
 }
 
 .works h1 {
-    font-size: 36px;
+    
     margin-bottom: 10px;
     color: #011152;
 }
 
 .works p {
-    font-size: 18px;
     color: #666;
     margin-bottom: 40px;
     padding-left: 1rem;
@@ -463,6 +462,99 @@ body {
         width: 80%;
         margin-bottom: 20px;
     }
+}
+/* Work */
+
+/* Global Styles */
+.containers {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Add padding for responsiveness */
+}
+
+.content-row{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content-box {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.content-box:hover {
+  background-color: #D1E9F6;
+}
+
+.image-container {
+  width: 100%;
+  height: 250px; /* Set a fixed height */
+  border: 2px solid #011152;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  transition: transform 0.4s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+
+.content h1 {
+  font-size: 1.25em;
+  color: #011152;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.content p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-box {
+      flex: 1 1 30%;
+  }
+  .content h1 {
+    font-size: 1rem; /* Equivalent to 16px */
+}
+.content p {
+    font-size: 0.875rem; /* Equivalent to 14px */
+}
+}
+
+@media (max-width: 768px) {
+  .containers {
+      flex-direction: column;
+  }
+
+  .content-box {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .image-container {
+      width: 100%;
+  }
 }
 
 /* Idea Delivery Section */
@@ -512,93 +604,6 @@ body {
     }
 }
 
-/* Work */
-
-/* Global Styles */
-.containers {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1rem; /* Add padding for responsiveness */
-}
-
-.content-row{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.content-box {
-    flex: 1;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.content-box:hover {
-    background-color: #D1E9F6;
-}
-
-.image-container {
-    width: 100%;
-    height: 250px; /* Set a fixed height */
-    border: 2px solid #011152;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%; /* Ensure the image fills the container */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    transition: transform 0.4s ease-in-out;
-}
-
-.image-container img:hover {
-    transform: scale(1.1);
-    transition: transform 0.4s ease-in-out;
-}
-
-
-.content h1 {
-    font-size: 1.5em;
-    color: #011152;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.content p {
-    margin-bottom: 15px;
-    font-size: 1em;
-    color: #2c3e50;
-    text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .content-box {
-        flex: 1 1 30%;
-    }
-}
-
-@media (max-width: 768px) {
-    .containers {
-        flex-direction: column;
-    }
-
-    .content-box {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .image-container {
-        width: 100%;
-    }
-}
 
 /* Idea Delivery Section 2 */
 .idea-delivery2 {
